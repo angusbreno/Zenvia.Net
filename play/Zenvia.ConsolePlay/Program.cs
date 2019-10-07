@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Zenvia.SMS;
+using Zenvia.SMS.Exceptions;
 using Zenvia.SMS.Models.Requests;
 
 namespace Zenvia.ConsolePlay
@@ -20,16 +21,16 @@ namespace Zenvia.ConsolePlay
 
                 var simpleMessage = new SendSmsRequest()
                 {
-                    To = "5541997097084",
+                    To = "1231312312312",
                     Msg = "teste"
                 };
 
                 var r = await smsClient.SendMessageAsync(simpleMessage);
 
             }
-            catch (Exception e)
+            catch (SendSMSException e)
             {
-
+                var q = e.Response;
                 throw e;
             }
 
