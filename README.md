@@ -1,3 +1,4 @@
+<img src="https://github.com/angusbreno/Zenvia.Net/blob/master/img/zenvialogo.png?raw=true" alt="Zenvia">
 # Zenvia.Net
 Zenvia is a communication platform focused in send sms, whatsapp messages and other.
 
